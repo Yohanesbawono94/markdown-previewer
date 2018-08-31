@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import marked from 'marked';
-import './App.scss';
+import './css/App.css';
 
 // Editor component
 class Editor extends React.Component {

@@ -4,25 +4,20 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 h2 {
   margin: 0;
-  padding-bottom: 5px;
-}
+  padding-bottom: 5px; }
 
 i {
-  transition: color 200ms ease-in-out;
-  &:hover {
-  color: #ea4bd0;
-  }
-}
+  transition: color 200ms ease-in-out; }
+  i:hover {
+    color: #ea4bd0; }
 
 nav {
   display: flex;
-  text-align: center;
-}
+  text-align: center; }
 
 .editor {
   display: flex;
@@ -33,15 +28,13 @@ nav {
   height: 42%;
   width: 100%;
   padding: 0.3rem;
-  transition: height 300ms ease-in-out;
-}
+  transition: height 300ms ease-in-out; }
 
 textarea {
   height: 80%;
   overflow-y: auto;
   padding: 1rem;
-  transition: height 300ms ease-in-out;
-}
+  transition: height 300ms ease-in-out; }
 
 .preview {
   display: flex;
@@ -53,16 +46,14 @@ textarea {
   width: 100%;
   padding: 0.3rem;
   margin-top: 5px;
-  transition: height 300ms ease-in-out;
-}
+  transition: height 300ms ease-in-out; }
 
 .previewer {
   height: 80%;
   overflow-y: auto;
   background-color: #fff;
   padding: 1rem;
-  transition: height 300ms ease-in-out;
-}
+  transition: height 300ms ease-in-out; }
 
 .maximized {
   display: flex;
@@ -71,22 +62,16 @@ textarea {
   align-center: center;
   height: 90%;
   width: 100%;
-  padding: 0.3rem;
-  textarea {
-    height: 90%;
-  }
-  .previewer {
-    height: 90%
-  }
-}
+  padding: 0.3rem; }
+  .maximized textarea {
+    height: 90%; }
+  .maximized .previewer {
+    height: 90%; }
 
 .hide {
-  height: 10%;
-  textarea {
+  height: 10%; }
+  .hide textarea {
+    height: 0px; }
+  .hide .previewer {
     height: 0px;
-  }
-  .previewer {
-    height: 0px;
-    padding: 0;
-  }
-}
+    padding: 0; }
