@@ -1,0 +1,92 @@
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+i {
+  transition: color 200ms ease-in-out;
+  &:hover {
+  color: #ea4bd0;
+  }
+}
+
+nav {
+  display: flex;
+  text-align: center;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-center: center;
+  background: #b3d9ff;
+  height: 42%;
+  width: 100%;
+  padding: 0.3rem;
+  transition: height 300ms ease-in-out;
+}
+
+textarea {
+  height: 80%;
+  overflow-y: auto;
+  padding: 1rem;
+  transition: height 300ms ease-in-out;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-center: center;
+  background: #b3d9ff;
+  height: 50%;
+  width: 100%;
+  padding: 0.3rem;
+  margin-top: 5px;
+  transition: height 300ms ease-in-out;
+}
+
+.previewer {
+  height: 80%;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 1rem;
+  transition: height 300ms ease-in-out;
+}
+
+.maximized {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-center: center;
+  height: 90%;
+  width: 100%;
+  padding: 0.3rem;
+  textarea {
+    height: 90%;
+  }
+  .previewer {
+    height: 90%
+  }
+}
+
+.hide {
+  height: 10%;
+  textarea {
+    height: 0px;
+  }
+  .previewer {
+    height: 0px;
+    padding: 0;
+  }
+}
