@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import marked from 'marked';
 import './App.scss';
 
 // Editor component
