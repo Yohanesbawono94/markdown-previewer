@@ -3,10 +3,7 @@ import marked from 'marked';
 import './css/App.css';
 
 // Editor component
-class Editor extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class Editor extends Component {
   render () {
     return (
      <section className={this.props.window}>
@@ -27,10 +24,7 @@ class Editor extends React.Component {
 }
 
 // Preview component
-class Preview extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+class Preview extends Component {
   render () {
     return (
       <section className={this.props.window}>
@@ -59,7 +53,7 @@ class Preview extends React.Component {
 }
 
 // Grandparent component
-class App extends React.Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
