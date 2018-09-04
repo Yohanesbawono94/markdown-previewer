@@ -4,3 +4,8 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
+#root {
+  height: 100vh;
+
+}
